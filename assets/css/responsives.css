@@ -1,0 +1,168 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .negLeft {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .espace_pub_1{
+    margin-bottom: 10px;
+  }
+
+  .navbar{
+    padding: initial !important;
+  }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .negLeft {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+  }
+  
+  .espace_pub_1{
+    margin-bottom: 10px;
+  }
+
+  .article-populaire ul{
+    -webkit-column-count: 1;
+    column-count: 1;
+  }
+
+  .pre-footer{
+    padding: 13px;
+  }
+
+  .copyright{
+    padding: 20px;
+  }
+
+  .d-flex .col-sm-8{
+    padding: inherit;
+  }
+
+  .content-1{
+    margin-top: -16px;
+  }
+
+  .blockShadow{
+    margin-top: -60px;
+  }
+
+  .navbar{
+    padding: initial !important;
+  }
+
+  .navbar ul li a {
+    color: #343a40;
+  }
+
+  .art-content-2 .img-article{
+    width: auto;
+  }
+
+  .art-content-2 .col-sm-8{
+    padding: inherit;
+  }
+
+  .text-article{
+    margin-left: 15px !important;
+    padding-right: 15px !important;
+    margin-top: 10px !important;
+  }
+
+  /* pluglin partage */
+  .juiz_sps_links {
+    margin: auto;
+    position: inherit;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .juiz_sps_hide_name .juiz_sps_item a {
+    padding: 0.4em .0em 0.45em;
+    text-align: center;
+    display: block !important;
+    width: 60px;
+    height: 45px;
+    margin: 2px;
+  }
+  .juiz_sps_links .juiz_sps_item{
+    display: inline-block !important;
+  }
+
+  .juiz_sps_links ul, .juiz_sps_links .juiz_sps_item {
+    /* margin-top: 20px !important; */
+  }
+
+  iframe{
+    width: 100%;    
+  }
+
+}
+
+
+@media (min-width: 375px){
+
+}
+
+
+.fa-bars{
+  color: #f5801c;
+  font-size: 30px;
+}

@@ -1,0 +1,260 @@
+@import "menu.scss";
+$orange: #FF7F0A;
+$grey-1: #00000047;
+$grey-2: #00000012;
+
+// $grey: ;
+$black: black;
+
+.menu-sidebar {
+    ul {
+        li {
+            list-style: none;
+            a {
+                color: $grey-1;
+                padding: 10px;
+                border-left: 2px solid $grey-2;
+                padding-left: 20px;
+                display: flex;
+            }
+
+            .active {
+                padding: 10px;
+                color: $orange;
+                border-left: 2px solid $orange;
+                padding-left: 20px;
+            }
+
+            a:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.file-ariane{
+    margin-bottom: 50px;
+    img{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    ul{
+        display: flex;
+        padding: inherit;
+
+        li{
+            list-style: none;
+            a{
+                color: $orange;
+                text-decoration: none;
+                .fas{
+                    color: $grey-1;
+                }
+            }
+        }
+    }
+}
+
+
+.icon-bottom{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-top: 5px;
+    background-image: url(../img/icon-bottom.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-top{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-top: 5px;
+    background-image: url(../img/icon-top.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-1 {
+    height: 550px;
+    background-size: cover;
+}
+
+.section-2 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .blc {
+        text-align: center;
+
+        img {
+            width: 25%;
+        }
+
+        p {
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        a {
+            color: $black;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.section-3 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-top: 1px solid #80808014;
+
+    .blc {
+        img {
+            width: 85%;
+        }
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a {
+        color: $orange;
+    }
+}
+
+.section-4 {
+    border-top: 1px solid #80808014;
+
+    h4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: gray;
+    }
+
+    .blc-left {
+        padding: 80px;
+        padding-left: inherit;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    .blc-right {
+        padding: 80px;
+        padding-right: inherit;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.section-5 {
+    height: 500px;
+    background-image: url(../img/Image_Satisfait_ou_refait_Desktop.png);
+    background-size: cover;
+    padding: 140px;
+    .blc{
+        h4{
+            color: white;
+        }
+
+        p{
+            color: white;
+        }
+
+        a{
+            color: $orange;
+        }
+    }
+}
+
+.section-6 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-top: 1px solid #80808014;
+
+    .blc-left {}
+
+    .blc-right {
+        text-align: center;
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+.section-7 {
+    border-top: 1px solid #80808014;
+
+    .blc-left {
+        padding: 80px;
+        padding-left: inherit;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .blc-right {
+        padding: 80px;
+        padding-right: inherit;
+    }
+
+    .pre-footer {
+        padding: 80px;
+        border-top: 1px solid #80808014;
+        text-align: center;
+    }
+}
+
+
+.rubrique{
+
+    .section-1 {
+        height: 486px;
+        background-size: cover;
+        text-align: center;
+        padding: 170px;
+        
+        .blc{
+            h1{
+                color: white;
+            }
+        }
+    }
+
+
+    .accordeon{
+        .panel{
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border-top: 1px solid $grey-2;
+            a{
+                color: black;
+                font-size: 20px;
+            }
+
+            a:hover{
+                text-decoration: none;
+            }
+        }
+    }
+ 
+}
+
