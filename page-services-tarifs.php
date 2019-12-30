@@ -3,7 +3,7 @@
 <?php $picture = get_field('visuel'); ?>
 
 <div class="rubrique">
-    <div class="section-1" style="background-image: url(<?php echo $picture['url'];?>);">
+    <div class="section-1 d-none d-lg-block" style="background-image: url(<?php echo $picture['url'];?>);">
         <div class="container">
             <div class="blc">
                 <h1>Assistance Services & Tarifs </h1>
@@ -11,10 +11,20 @@
         </div>  
     </div>
 
-    <div class="section-2">
+    <!-- section 1 mobile -->
+    <div class="section-1-mobile d-block d-lg-none">
+        <div class="section-1" style="background-image: url(<?php echo $picture['url'];?>);"></div>
+        <div class="container">
+            <div class="blc">
+                <h1>Assistance <br>Services & Tarifs </h1>
+            </div>
+        </div>  
+    </div>
+
+    <div class="section-2 ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 menu-sidebar">
+                <div class="col-lg-3 menu-sidebar d-none d-lg-block">
                     <ul>
                         <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/services-tarifs" class="active">SEVICES & TARIFS</a></li>
                         <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/comptes-moyens-de-paiements">COMPTES & MOYENS DE PAIEMENT</a></li>
@@ -28,15 +38,20 @@
                 </div>
 
                 <div class="col-lg-9">
-                   <div class="file-ariane">
+                    <div class="file-ariane d-none d-lg-block">
                         <ul>
                             <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients">Aide & Support <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
                             <li><a href="#">Aide pour les clients<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
                             <li><a href="#">Services & Tarifs </a></li>
                         </ul> 
-                   </div>
-
-                   <div class="accordeon">
+                    </div>
+                
+                    <!-- file ariane mobile -->
+                    <div class="file-ariane-mobile d-none d-lg-none">
+                       <a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons8-left.png" class="img-fluid"/>Aide pour les clients</a>
+                    </div>
+                   
+                    <div class="accordeon">
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="panel panel-default">
                             <div class="panel-heading" role="tab" id="headingOne">

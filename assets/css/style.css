@@ -6,6 +6,19 @@
   font-weight: 400 !important;
 }
 
+.rubrique .section-1-mobile .section-1 {
+  height: 255px;
+  background-size: cover;
+  text-align: center;
+  padding: initial;
+}
+.rubrique .file-ariane-mobile {
+  margin-bottom: 10px;
+}
+.rubrique .file-ariane-mobile img {
+  width: 40px;
+}
+
 .menu-sidebar-mobile {
   text-align: center;
   margin-bottom: 35px;
