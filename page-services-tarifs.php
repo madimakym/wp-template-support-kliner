@@ -1,14 +1,4 @@
 <?php get_header(); ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    $(document).ready(function(){
-    $('.collapse').on('shown.bs.collapse', function(){
-            $(this).parent().find(".icon-bottom").removeClass("icon-bottom").addClass("icon-top");
-            }).on('hidden.bs.collapse', function(){
-            $(this).parent().find(".icon-top").removeClass("icon-top").addClass("icon-bottom");
-            });
-    });
-</script>
 
 <?php $picture = get_field('visuel'); ?>
 

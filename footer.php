@@ -31,7 +31,10 @@
     </footer>
 
 </div><!-- #page -->
-
+<link rel='stylesheet' id='main-css'  href='https://www.kliner.com/wp-content/themes/kliner/assets/css/main.css?ver=1.6.5' media='all' />
+<script type='text/javascript' src='https://www.kliner.com/wp-content/themes/kliner/assets/js/vendor/slick.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.kliner.com/wp-content/themes/kliner/assets/js/main.js?ver=1.5'></script>
 <?php wp_footer(); ?>
+
 </body>
 </html>

@@ -49,8 +49,8 @@
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
-                                        Horaires de service
+                                       Horaires de service
+                                       <div class="icon-bottom float-right"></div>
                                     </a>
                                 </h4>
                             </div>
@@ -65,8 +65,8 @@
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
                                         Villes couvertes
+                                        <div class="icon-bottom float-right"></div>
                                     </a>
                                 </h4>
                             </div>
@@ -81,8 +81,8 @@
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
                                         Délais de réponse
+                                        <div class="icon-bottom float-right"></div>
                                     </a>
                                 </h4>
                             </div>

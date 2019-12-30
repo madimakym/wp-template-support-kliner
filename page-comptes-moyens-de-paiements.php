@@ -50,8 +50,8 @@
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
                                         Inscription
+                                        <div class="icon-bottom float-right"></div>
                                     </a>
                                 </h4>
                             </div>
@@ -66,8 +66,8 @@
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
                                         Gestion de profil
+                                        <div class="icon-bottom float-right"></div>
                                     </a>
                                 </h4>
                             </div>
@@ -82,8 +82,8 @@
                             <div class="panel-heading" role="tab" id="headingThree">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
                                         Connexion
+                                        <div class="icon-bottom float-right"></div>
                                     </a>
                                 </h4>
                             </div>
@@ -98,8 +98,8 @@
                             <div class="panel-heading" role="tab" id="headingFour">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
                                         Moyens de paiement
+                                        <div class="icon-bottom float-right"></div>
                                     </a>
                                 </h4>
                             </div>
@@ -114,8 +114,8 @@
                             <div class="panel-heading" role="tab" id="headingFour">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
-                                        <i class="more-less glyphicon glyphicon-plus"></i>
                                         Facturation
+                                        <div class="icon-bottom float-right"></div>
                                     </a>
                                 </h4>
                             </div>
