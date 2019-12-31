@@ -81,7 +81,7 @@
 			<div class="col-lg-9">
 				<div class="row">
 					<div class="col-lg-3 col-6 blc">
-						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/services-tarifs/">
+						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients/services-tarifs/">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/Icone-services-et-prix.png" class="img-fluid" />
 							<p>Services & tarifs</p>
 						</a>

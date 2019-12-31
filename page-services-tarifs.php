@@ -1,5 +1,37 @@
 <?php get_header(); ?>
 
+<?php
+    // $args = array(
+    //     'post_type' => array('services-tarifs'), 
+    //     'posts_per_page' => 1,
+    //     'order' => 'DESC'
+    // );
+    // $menage_repassage = new WP_Query($args);
+
+   
+
+    $menage_repassage = new WP_Query(array(
+        'post_type'			=> 'services-tarifs',
+        'posts_per_page'	=> -1,
+        'meta_query'	=> array(
+            'relation'		=> 'AND',
+            array(
+                'key'	 	=> 'categorie',
+                'value'	  	=> array('clients'),
+                'compare' 	=> 'IN',
+            ),
+
+            array(
+                'key'	 	=> 'etiquettes',
+                'value'	  	=> array('menage_repassage_a_domicile'),
+                'compare' 	=> 'IN',
+            ),
+        ),
+    ));
+
+?>
+
+
 <?php $picture = get_field('visuel'); ?>
 
 <div class="rubrique">
@@ -26,7 +58,7 @@
             <div class="row">
                 <div class="col-lg-3 menu-sidebar d-none d-lg-block">
                     <ul>
-                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/services-tarifs" class="active">SEVICES & TARIFS</a></li>
+                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/services-tarifs" class="active">SERVICES & TARIFS</a></li>
                         <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/comptes-moyens-de-paiements">COMPTES & MOYENS DE PAIEMENT</a></li>
                         <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/utiliser-lapplication">UTILISER L'APPLICATION</a></li>
                         <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/disponibilite">DISPONIBILITÉ</a></li>
@@ -64,7 +96,10 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                     <?php the_field('menage_&_repassage_a_domicile'); ?>
+                                    <?php while ($menage_repassage -> have_posts()) : $menage_repassage -> the_post(); ?>
+                                        <a href="<?php the_permalink() ?>"> <?php the_title(); ?></a>
+                                    <?php endwhile; ?>
+                                     <?php //the_field('menage_&_repassage_a_domicile'); ?>
                                 </div>
                             </div>
                         </div>
