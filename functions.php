@@ -38,4 +38,29 @@
   add_action('after_setup_theme', 'Setup');
 
 
- 
+  function get_breadcrumb() {
+    // echo '<a href="'.home_url().'" rel="nofollow">Home</a>';
+    if (is_category() || is_single()) {
+        // the_category(' &bull; ');
+
+        if (is_category()) {
+          echo "<img src=\"https://support.kliner.com/wp-content/themes/supportkliner/assets/img/icon-right.png\"/>";
+          the_title();
+      }
+
+            if (is_single()) {
+                echo "<img src=\"https://support.kliner.com/wp-content/themes/supportkliner/assets/img/icon-right.png\"/>";
+                the_title();
+            }
+
+    } elseif (is_page()) {
+        echo "<img src=\"https://support.kliner.com/wp-content/themes/supportkliner/assets/img/icon-right.png\"/>";
+
+    } elseif (is_search()) {
+        echo "<img src=\"https://support.kliner.com/wp-content/themes/supportkliner/assets/img/icon-right.png\"/>";
+
+        echo '"<em>';
+        echo the_search_query();
+        echo '</em>"';
+    }
+}

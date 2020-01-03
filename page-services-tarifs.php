@@ -1,34 +1,25 @@
 <?php get_header(); ?>
 
 <?php
-    // $args = array(
-    //     'post_type' => array('services-tarifs'), 
-    //     'posts_per_page' => 1,
-    //     'order' => 'DESC'
-    // );
-    // $menage_repassage = new WP_Query($args);
-
-   
-
     $menage_repassage = new WP_Query(array(
-        'post_type'			=> 'services-tarifs',
-        'posts_per_page'	=> -1,
-        'meta_query'	=> array(
-            'relation'		=> 'AND',
-            array(
-                'key'	 	=> 'categorie',
-                'value'	  	=> array('clients'),
-                'compare' 	=> 'IN',
-            ),
-
-            array(
-                'key'	 	=> 'etiquettes',
-                'value'	  	=> array('menage_repassage_a_domicile'),
-                'compare' 	=> 'IN',
-            ),
-        ),
+        'category_name'			=> 'menage-repassage-a-domicile-client',
     ));
 
+    $service_bnb = new WP_Query(array(
+        'category_name'			=> 'service-bnb-clients',
+    ));
+
+    $nettoyage_de_bureaux = new WP_Query(array(
+        'category_name'			=> 'nettoyage-de-bureaux-clients',
+    ));
+
+    $guide_des_prix = new WP_Query(array(
+        'category_name'			=> 'guide-des-prix-clients',
+    ));
+
+    $suivi_administratif = new WP_Query(array(
+        'category_name'			=> 'suivi-administratif-clients',
+    ));
 ?>
 
 
@@ -79,7 +70,7 @@
                     </div>
                 
                     <!-- file ariane mobile -->
-                    <div class="file-ariane-mobile d-none d-lg-none">
+                    <div class="file-ariane-mobile d-block d-md-none">
                        <a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons8-left.png" class="img-fluid"/>Aide pour les clients</a>
                     </div>
                    
@@ -97,9 +88,8 @@
                             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
                                     <?php while ($menage_repassage -> have_posts()) : $menage_repassage -> the_post(); ?>
-                                        <a href="<?php the_permalink() ?>"> <?php the_title(); ?></a>
+                                        <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
                                     <?php endwhile; ?>
-                                     <?php //the_field('menage_&_repassage_a_domicile'); ?>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +105,9 @@
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
-                                    <?php the_field('service_bnb'); ?>
+                                    <?php while ($service_bnb -> have_posts()) : $service_bnb -> the_post(); ?>
+                                        <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                    <?php endwhile; ?>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +123,9 @@
                             </div>
                             <div id="collapseTree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTree">
                                 <div class="panel-body">
-                                    <?php the_field('nettoyage_de_bureaux'); ?>
+                                    <?php while ($nettoyage_de_bureaux -> have_posts()) : $nettoyage_de_bureaux -> the_post(); ?>
+                                        <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                    <?php endwhile; ?>
                                 </div>
                             </div>
                         </div>
@@ -147,7 +141,9 @@
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                 <div class="panel-body">
-                                    <?php the_field('guide_des_prix'); ?>
+                                    <?php while ($guide_des_prix -> have_posts()) : $guide_des_prix -> the_post(); ?>
+                                        <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                    <?php endwhile; ?>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +159,9 @@
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                                 <div class="panel-body">
-                                    <?php the_field('suivi_administratif'); ?>
+                                    <?php while ($suivi_administratif -> have_posts()) : $suivi_administratif -> the_post(); ?>
+                                        <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                    <?php endwhile; ?>
                                 </div>
                             </div>
                         </div>

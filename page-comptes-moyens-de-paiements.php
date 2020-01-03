@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-lg-3 menu-sidebar">
                     <ul>
-                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/services-tarifs">SEVICES & TARIFS</a></li>
+                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/">SEVICES & TARIFS</a></li>
                         <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/comptes-moyens-de-paiements" class="active">COMPTES & MOYENS DE PAIEMENT</a></li>
                         <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/utiliser-lapplication">UTILISER L'APPLICATION</a></li>
                         <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/disponibilite">DISPONIBILITÉ</a></li>

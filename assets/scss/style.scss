@@ -253,6 +253,17 @@ $black: black;
             a:hover{
                 text-decoration: none;
             }
+
+            .panel-body{
+                p{
+                    margin: auto !important;
+                    a{
+                        color: #178df5;
+                        font-size: 16px;
+                    }    
+                }
+                           
+            }
         }
     }
  

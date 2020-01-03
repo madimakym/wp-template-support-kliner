@@ -295,5 +295,12 @@
 .rubrique .accordeon .panel a:hover {
   text-decoration: none;
 }
+.rubrique .accordeon .panel .panel-body p {
+  margin: auto !important;
+}
+.rubrique .accordeon .panel .panel-body p a {
+  color: #178df5;
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=style.css.map */

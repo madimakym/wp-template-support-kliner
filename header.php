@@ -35,6 +35,7 @@
                 </a>
                 <ul class="menu menu--right">
                     <li><a href="https://www.kliner.com/devenir-partenaire">DEVENIR AIDE MÉNAGÈRE</a></li>
+                    <li><a href="http://support.kliner.com/">AIDE</a></li>
                     <li><a href="https://v2.kliner.com/espaceclient/login" class="esp" target="_blank">ESPACE PRIVÉ</a>
                     </li>
                 </ul>
@@ -47,6 +48,7 @@
                     <li><a href="https://www.kliner.com/femme-de-menage">Nos valeurs</a></li>
                     <li><a href="https://www.kliner.com/a-propos-de-nous">Notre histoire</a></li>
                     <li><a href="https://www.kliner.com/application-du-menage">L’application du ménage</a></li>
+                    <li><a href="http://support.kliner.com/">Aide </a></li>
                     <li><a href="https://www.kliner.com/devenir-partenaire" class="button-rounded">Devenir Aide
                             ménagère</a></li>
                 </ul>
@@ -57,8 +59,8 @@
                     <li><a href="http://http://kliner.app.link"
                             onclick="ga('send', 'RDV', 'clic', 'Prendre rendez-vous' );">Télécharger l'appli |
                             Client</a></li>
-                    <li><a href="https://www.kliner.com/devenir-partenaire" class="button-rounded">Devenir aide
-                            ménagere</a></li>
+                            
+                    <li><a href="https://www.kliner.com/devenir-partenaire" class="button-rounded">Devenir aide ménagere</a></li>
                 </ul>
             </nav>
             <a href="https://www.kliner.com">
