@@ -27,13 +27,27 @@
     </div>
 
     <?php 
-        if(in_category('menage-repassage-a-domicile')){
-          echo "TOP";
-
-        }else{
-            echo "NULL";
-            // get_template_part('content','single.php');
+        //Rubrique
+        if(in_category('services-tarifs-clients')){
+            $rubrique = 'Service & Tarifs';
         }
+
+        if(in_category('comptes-et-moyens-de-paiements-clients')){
+            $rubrique = 'Comptes et moyens de paiements';
+        }
+
+        // Sous rubrique
+        if(in_category('menage-repassage-a-domicile-client')){
+            $sousrubrique = 'Ménage & Repassage à domicile';
+        }
+        
+        if(in_category('service-bnb-clients')){
+            $sousrubrique = 'Service BnB';
+        }
+        // if(in_category('service-bnb-clients')){
+        //     $categorie = 'Service BnB';
+        // }
+   
     ?>
     
     <div class="section-2 ">
@@ -56,8 +70,9 @@
                     <div class="file-ariane d-none d-lg-block">
                         <ul>
                             <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients">Aide & Support <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
-                            <li><a href="#">Aide pour les clients<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
-                            <li><a href="#">Services & Tarifs </a></li>
+                            <li><a href="#">Aide pour les clients <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
+                            <li><a href="#"><?php echo $rubrique ?> <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
+                            <li><a href="#"><?php echo $sousrubrique ?> <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
                         </ul> 
                         <!-- <div class="breadcrumb"><?php get_breadcrumb(); ?></div> -->
 

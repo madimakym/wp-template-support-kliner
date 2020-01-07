@@ -1,32 +1,53 @@
 <?php get_header(); ?>
 
 <?php
-    $menage_repassage = new WP_Query(array(
+    $menage_repassage_client = new WP_Query(array(
         'category_name'			=> 'menage-repassage-a-domicile-client',
     ));
 
-    $service_bnb = new WP_Query(array(
+    $menage_repassage_aides = new WP_Query(array(
+        'category_name'			=> 'menage-repassage-a-domicile-aides',
+    ));
+
+    $service_bnb_client = new WP_Query(array(
         'category_name'			=> 'service-bnb-clients',
     ));
 
-    $nettoyage_de_bureaux = new WP_Query(array(
+    $service_bnb_aides = new WP_Query(array(
+        'category_name'			=> 'service-bnb-aides',
+    ));
+
+    $nettoyage_de_bureaux_client = new WP_Query(array(
         'category_name'			=> 'nettoyage-de-bureaux-clients',
     ));
 
-    $guide_des_prix = new WP_Query(array(
+    $nettoyage_de_bureaux_aides = new WP_Query(array(
+        'category_name'			=> 'nettoyage-de-bureaux-aides',
+    ));
+    
+
+    $guide_des_prix_client = new WP_Query(array(
         'category_name'			=> 'guide-des-prix-clients',
     ));
 
-    $suivi_administratif = new WP_Query(array(
+    $guide_des_prix_aides = new WP_Query(array(
+        'category_name'			=> 'guide-des-prix-aides',
+    ));
+
+    $suivi_administratif_client = new WP_Query(array(
         'category_name'			=> 'suivi-administratif-clients',
+    ));
+
+    $suivi_administratif_aides = new WP_Query(array(
+        'category_name'			=> 'suivi-administratif-aides',
     ));
 ?>
 
 
-<?php $picture = get_field('visuel'); ?>
+<?php $picture = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
 
 <div class="rubrique">
-    <div class="section-1 d-none d-lg-block" style="background-image: url(<?php echo $picture['url'];?>);">
+    <div class="section-1 d-none d-lg-block" style="background-image: url(<?php echo $picture['0'];?>);">
         <div class="container">
             <div class="blc">
                 <h1>Assistance Services & Tarifs </h1>
@@ -48,17 +69,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 menu-sidebar d-none d-lg-block">
-                    <ul>
-                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/services-tarifs" class="active">SERVICES & TARIFS</a></li>
-                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/comptes-moyens-de-paiements">COMPTES & MOYENS DE PAIEMENT</a></li>
-                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/utiliser-lapplication">UTILISER L'APPLICATION</a></li>
-                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/disponibilite">DISPONIBILITÉ</a></li>
-                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/qualite">QUALITÉ</a></li>
-                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/protection">PROTECTION</a></li>
-                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/qualite">RÉCLAMATION</a></li>
-                        <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/nous-contacter">NOUS CONTACTER</a></li>
-                    </ul>
+                    <?php if( is_page('Services & tarifs (Aides ménagères)')): ?>
+                        <ul>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/services-tarifs" class="active">SERVICES & TARIFS</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/comptes-moyens-de-paiements">COMPTES & MOYENS DE PAIEMENT</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/utiliser-lapplication">UTILISER L'APPLICATION</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/disponibilite">DISPONIBILITÉ</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/qualite">QUALITÉ</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/protection">PROTECTION</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/reclamation">RÉCLAMATION</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/nous-contacter">NOUS CONTACTER</a></li>
+                        </ul>
+                    <?php else: ?>
+                        <ul>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients/services-tarifs" class="active">SERVICES & TARIFS</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients/comptes-moyens-de-paiements">COMPTES & MOYENS DE PAIEMENT</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients/utiliser-lapplication">UTILISER L'APPLICATION</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients/disponibilite">DISPONIBILITÉ</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients/qualite">QUALITÉ</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients/protection">PROTECTION</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients/reclamation">RÉCLAMATION</a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients/nous-contacter">NOUS CONTACTER</a></li>
+                        </ul>
+                    <?php endif; ?>
                 </div>
+
 
                 <div class="col-lg-9">
                     <div class="file-ariane d-none d-lg-block">
@@ -87,9 +122,15 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    <?php while ($menage_repassage -> have_posts()) : $menage_repassage -> the_post(); ?>
-                                        <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
-                                    <?php endwhile; ?>
+                                    <?php if( is_page('Services & tarifs (Aides ménagères)')): ?>
+                                        <?php while ($menage_repassage_aides -> have_posts()) : $menage_repassage_aides -> the_post(); ?>
+                                            <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                        <?php endwhile; ?>
+                                    <?php else: ?>
+                                        <?php while ($menage_repassage_client -> have_posts()) : $menage_repassage_client -> the_post(); ?>
+                                            <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -105,9 +146,15 @@
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
-                                    <?php while ($service_bnb -> have_posts()) : $service_bnb -> the_post(); ?>
-                                        <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
-                                    <?php endwhile; ?>
+                                    <?php if(is_page('Services & tarifs (Aides ménagères)')): ?>
+                                        <?php while ($service_bnb_aides -> have_posts()) : $service_bnb_aides -> the_post(); ?>
+                                            <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                        <?php endwhile; ?>
+                                    <?php else: ?>
+                                        <?php while ($service_bnb_client -> have_posts()) : $service_bnb_client -> the_post(); ?>
+                                            <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -123,9 +170,15 @@
                             </div>
                             <div id="collapseTree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTree">
                                 <div class="panel-body">
-                                    <?php while ($nettoyage_de_bureaux -> have_posts()) : $nettoyage_de_bureaux -> the_post(); ?>
-                                        <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
-                                    <?php endwhile; ?>
+                                    <?php if(is_page('Services & tarifs (Aides ménagères)')): ?>
+                                        <?php while ($nettoyage_de_bureaux_aides -> have_posts()) : $nettoyage_de_bureaux_aides -> the_post(); ?>
+                                            <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                        <?php endwhile; ?>
+                                    <?php else: ?>
+                                        <?php while ($nettoyage_de_bureaux_client -> have_posts()) : $nettoyage_de_bureaux_client -> the_post(); ?>
+                                            <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>                                    
                                 </div>
                             </div>
                         </div>
@@ -134,16 +187,22 @@
                             <div class="panel-heading" role="tab" id="headingFour">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-                                        Guide des prix
+                                        Guide de prix
                                         <div class="icon-bottom float-right"></div>
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                 <div class="panel-body">
-                                    <?php while ($guide_des_prix -> have_posts()) : $guide_des_prix -> the_post(); ?>
-                                        <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
-                                    <?php endwhile; ?>
+                                    <?php if(is_page('Services & tarifs (Aides ménagères)')): ?>
+                                        <?php while ($guide_des_prix_aides -> have_posts()) : $guide_des_prix_aides -> the_post(); ?>
+                                            <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                        <?php endwhile; ?>
+                                    <?php else: ?>
+                                        <?php while ($guide_des_prix_client -> have_posts()) : $guide_des_prix_client -> the_post(); ?>
+                                            <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -159,9 +218,15 @@
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
                                 <div class="panel-body">
-                                    <?php while ($suivi_administratif -> have_posts()) : $suivi_administratif -> the_post(); ?>
-                                        <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
-                                    <?php endwhile; ?>
+                                    <?php if(is_page('Services & tarifs (Aides ménagères)')): ?>
+                                        <?php while ($suivi_administratif_aides -> have_posts()) : $suivi_administratif_aides -> the_post(); ?>
+                                            <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                        <?php endwhile; ?>
+                                    <?php else: ?>
+                                        <?php while ($suivi_administratif_client -> have_posts()) : $suivi_administratif_client -> the_post(); ?>
+                                            <p><a href="<?php the_permalink() ?>"> <?php the_title(); ?></a></p>
+                                        <?php endwhile; ?>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
