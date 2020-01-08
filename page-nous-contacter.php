@@ -41,6 +41,10 @@
                             <li><a href="#">Nous contacter </a></li>
                         </ul> 
                    </div>
+
+                   <div class="">
+                        <?php the_excerpt(); ?> 
+                    </div>
                 </div>
             </div>
         </div>

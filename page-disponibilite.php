@@ -44,7 +44,7 @@
 
     <!-- section 1 mobile -->
     <div class="section-1-mobile d-block d-lg-none">
-        <div class="section-1" style="background-image: url(<?php echo $picture['url'];?>);"></div>
+        <div class="section-1" style="background-image: url(<?php echo $picture['0'];?>);"></div>
         <div class="container">
             <div class="blc">
                 <h1>Assistance <br>Disponibilité</h1>
@@ -88,13 +88,13 @@
                             <ul>
                                 <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres">Aide & Support <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
                                 <li><a href="#">Aide pour les clients<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
-                                <li><a href="#">Utiliser l’application </a></li>
+                                <li><a href="#">Disponibilité </a></li>
                             </ul> 
                         <?php else: ?>
                             <ul>
                                 <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients">Aide & Support <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
                                 <li><a href="#">Aide pour les clients<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
-                                <li><a href="#">Utiliser l’application </a></li>
+                                <li><a href="#">Disponibilité </a></li>
                             </ul> 
                         <?php endif; ?>
                     </div>

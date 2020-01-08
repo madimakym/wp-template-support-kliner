@@ -1,9 +1,16 @@
 <?php get_header(); ?>
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
 
-<div class="section-1 d-none d-md-block" style="background-image: url(<?php echo $image['0'];?>);"></div>
+<!-- <div class="section-1 d-none d-md-block" style="background-image: url(<?php echo $image['0'];?>);"></div> -->
 
-
+<div class="section-1 d-none d-lg-block" style="background-image: url(<?php echo $image['0'];?>);">
+        <div class="container">
+            <div class="blc text-header">
+                <h1>Bienvenue dans l'assitance Kliner </h1>
+            </div>
+        </div>  
+	</div>
+	
 <!-- section 1 mobile -->
 <div class="section-1-mobile d-block d-lg-none">
 	<div class="section-1" style="background-image: url(<?php echo $image['0'];?>); height: 260px;"></div>
@@ -168,7 +175,7 @@
 				 <p><?php the_field('texte_s6'); ?></p>
 				</div>
 
-				<div class="col-lg-6 blc-right">
+				<div class="col-lg-6 blc-right order-first order-md-2">
 					<?php $picture = get_field('visuel_s6'); ?>
 					<img src="<?php echo $picture['url']; ?>">
 				</div>

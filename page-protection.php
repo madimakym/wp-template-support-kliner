@@ -34,7 +34,7 @@
 
     <!-- section 1 mobile -->
     <div class="section-1-mobile d-block d-lg-none">
-        <div class="section-1" style="background-image: url(<?php echo $picture['url'];?>);"></div>
+        <div class="section-1" style="background-image: url(<?php echo $picture['0'];?>);"></div>
         <div class="container">
             <div class="blc">
                 <h1>Assistance <br>Protection</h1>
@@ -125,7 +125,7 @@
                         </div>
                 
 
-                        <div class="panel panel-default in style="border-bottom: 1px solid #00000012;"">
+                        <div class="panel panel-default in ">
                             <div class="panel-heading" role="tab" id="headingFive">
                                 <h4 class="panel-title">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">

@@ -164,6 +164,15 @@
   background-size: cover;
 }
 
+.text-header {
+  height: 486px;
+  text-align: center;
+  padding: 228px;
+}
+.text-header h1 {
+  color: white;
+}
+
 .section-2 {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -301,6 +310,14 @@
 .rubrique .accordeon .panel .panel-body p a {
   color: #178df5;
   font-size: 16px;
+}
+
+.section-1-mobile .section-1 {
+  background-image: url(http://localhost/page_support/wp-content/uploads/2019/12/Image_Satisfait_ou_refait_Desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom -50px right -143px;
+  /* -webkit-background-size: cover; */
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,13 @@
 <?php get_header(); ?>
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
 
-<div class="section-1 d-none d-md-block" style="background-image: url(<?php echo $image['0'];?>);"></div>
-
+<div class="section-1 d-none d-lg-block" style="background-image: url(<?php echo $image['0'];?>);">
+        <div class="container">
+            <div class="blc text-header">
+                <h1>Bienvenue dans l'assitance Kliner </h1>
+            </div>
+        </div>  
+	</div>
 
 <!-- section 1 mobile -->
 <div class="section-1-mobile d-block d-lg-none">
@@ -51,14 +56,14 @@
 					</div>
 
 					<div class="col-lg-3 col-6 blc">
-						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/utiliser-lapplication">
+						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/utiliser-lapplication">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/Icône-application.png" class="img-fluid" />
 							<p>Utiliser l'application </p>
 						</a>
 					</div>
 
 					<div class="col-lg-3 col-6 blc">
-						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/disponibilite">
+						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/disponibilite">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icone-disponibilite.jpg" class="img-fluid" />
 							<p>Disponibilité</p>
 						</a>
@@ -68,28 +73,28 @@
 				<br><br>
 				<div class="row">
 					<div class="col-lg-3 col-6 blc">
-						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/qualite">
+						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/qualite">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/Icone-qualite.png" class="img-fluid" />
 							<p>Qualité</p>
 						</a>
 					</div>
 
 					<div class="col-lg-3 col-6 blc">
-						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/protection">
+						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/protection">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/Icone-protection.png" class="img-fluid" />
 							<p>Protection</p>
 						</a>
 					</div>
 
 					<div class="col-lg-3 col-6 blc">
-						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/reclamation">
+						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/reclamation">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/Icone-reclamation.png" class="img-fluid" />
 							<p>Réclamation</p>
 						</a>
 					</div>
 
 					<div class="col-lg-3 col-6 blc">
-						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/nous-contacter">
+						<a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/nous-contacter">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/Icone-contact.png" class="img-fluid" />
 							<p>Nous contacter</p>
 						</a>
@@ -168,7 +173,7 @@
 				 <p><?php the_field('texte_s6'); ?></p>
 				</div>
 
-				<div class="col-lg-6 blc-right">
+				<div class="col-lg-6 blc-right order-first order-md-2">
 					<?php $picture = get_field('visuel_s6'); ?>
 					<img src="<?php echo $picture['url']; ?>">
 				</div>

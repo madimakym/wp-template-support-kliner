@@ -57,7 +57,7 @@
 
     <!-- section 1 mobile -->
     <div class="section-1-mobile d-block d-lg-none">
-        <div class="section-1" style="background-image: url(<?php echo $picture['url'];?>);"></div>
+        <div class="section-1" style="background-image: url(<?php echo $picture['0'];?>);"></div>
         <div class="container">
             <div class="blc">
                 <h1>Assistance <br>Services & Tarifs </h1>
