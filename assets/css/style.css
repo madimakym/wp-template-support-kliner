@@ -130,7 +130,7 @@
   list-style: none;
 }
 .file-ariane ul li a {
-  color: #FF7F0A;
+  color: #FF7F0A !important;
   text-decoration: none;
 }
 .file-ariane ul li a .fas {
@@ -304,9 +304,6 @@
 .rubrique .accordeon .panel a:hover {
   text-decoration: none;
 }
-.rubrique .accordeon .panel .panel-body p {
-  margin: auto !important;
-}
 .rubrique .accordeon .panel .panel-body p a {
   color: #178df5;
   font-size: 16px;
@@ -318,6 +315,11 @@
   background-position: bottom -50px right -143px;
   /* -webkit-background-size: cover; */
   background-size: cover;
+}
+
+.panel-body p a {
+  color: #178df5;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

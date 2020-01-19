@@ -71,7 +71,7 @@
         <div class="section-1" style="background-image: url(<?php echo $picture['0'];?>);"></div>
         <div class="container">
             <div class="blc">
-                <h1>Assistance <br>Services & Tarifs </h1>
+                <h1>Assistance <br>Comptes et moyens de paiements </h1>
             </div>
         </div>  
     </div>
