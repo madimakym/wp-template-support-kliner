@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php
         global $post;
-        $picture = wp_get_attachment_url( get_post_thumbnail_id(99) );
+        $picture = wp_get_attachment_url( get_post_thumbnail_id(120) );
 ?>
 
 <div class="rubrique">

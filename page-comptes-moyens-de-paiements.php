@@ -77,6 +77,8 @@
     </div>
 
     <div class="section-2 ">
+    <?php global $post; echo $post->ID;?>
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 menu-sidebar d-none d-lg-block">

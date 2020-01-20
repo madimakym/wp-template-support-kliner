@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<?php $picture = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
+<?php global $post; $picture = wp_get_attachment_url( get_post_thumbnail_id(120) );?>
 
 <div class="rubrique">
-    <div class="section-1 d-none d-lg-block" style="background-image: url(<?php echo $picture['0'];?>);">
+    <div class="section-1 d-none d-lg-block" style="background-image: url(<?php echo $picture;?>);">
         <div class="container">
             <div class="blc">
                 <h1>Assistance Utiliser l'application </h1>
@@ -13,7 +13,7 @@
 
     <!-- section 1 mobile -->
     <div class="section-1-mobile d-block d-lg-none">
-        <div class="section-1" style="background-image: url(<?php echo $picture['0'];?>);"></div>
+        <div class="section-1" style="background-image: url(<?php echo $picture;?>);"></div>
         <div class="container">
             <div class="blc">
                 <h1>Assistance <br>Utiliser l'application </h1>

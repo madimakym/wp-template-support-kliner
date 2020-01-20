@@ -66,16 +66,9 @@
         </div>  
     </div>
 
-    <div class="section-2 ">
 
-    <?php
-        // global $post;
-        // echo $post->ID;
-        // $url = wp_get_attachment_url( get_post_thumbnail_id(316) );
-        // echo $url;
-    ?>
+    <div class="section-2 ">
     <?php //global $post; echo $post->ID;?>
-    
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 menu-sidebar d-none d-lg-block">

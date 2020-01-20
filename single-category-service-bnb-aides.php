@@ -2,10 +2,8 @@
 
 <?php
         global $post;
-        $picture = wp_get_attachment_url( get_post_thumbnail_id(99) );
+        $picture = wp_get_attachment_url( get_post_thumbnail_id(120) );
 ?>
-
-<?php //$picture = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full'); ?>
 
 <div class="rubrique">
     <div class="section-1 d-none d-lg-block" style="background-image: url(<?php echo $picture;?>);">
