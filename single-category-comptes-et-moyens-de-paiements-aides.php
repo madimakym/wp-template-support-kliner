@@ -41,14 +41,14 @@
                     <div class="file-ariane d-none d-lg-block">
                         <ul>
                             <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/">Aide & Support <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
-                            <li><a href="#">Aide pour les clients <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
-                            <li><a href="#"><?php $rubrique = get_the_category(); echo $rubrique[1]->cat_name; ?> <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/">Aide pour les clients <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/comptes-moyens-de-paiements"><?php $rubrique = get_the_category(); echo $rubrique[1]->cat_name; ?> <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
                             <li><a href="#"><?php $sous_rubrique = get_the_category(); echo $sous_rubrique[2]->cat_name; ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
                         </ul> 
                     </div>
                 
                     <!-- file ariane mobile -->
-                    <div class="file-ariane-mobile d-none d-lg-none">
+                    <div class="file-ariane-mobile d-block d-md-none">
                        <a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres/"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons8-left.png" class="img-fluid"/>Aide pour les clients</a>
                     </div>
                    

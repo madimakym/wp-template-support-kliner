@@ -77,7 +77,7 @@
     </div>
 
     <div class="section-2 ">
-    <?php global $post; echo $post->ID;?>
+    <?php //global $post; echo $post->ID;?>
 
         <div class="container">
             <div class="row">

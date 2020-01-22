@@ -54,8 +54,8 @@
                     <div class="file-ariane d-none d-lg-block">
                         <ul>
                             <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients">Aide & Support <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
-                            <li><a>Aide pour les clients <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
-                            <li><a>Services & Tarifs <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients">Aide pour les clients <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/clients/services-tarifs">Services & Tarifs <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
                             <li><a><?php $sous_rubrique = get_the_category(); echo $sous_rubrique[2]->cat_name; ?><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
                         </ul> 
                     </div>

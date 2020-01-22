@@ -41,7 +41,7 @@
                     <div class="file-ariane d-none d-lg-block">
                         <ul>
                             <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres">Aide & Support <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
-                            <li><a href="#">Aide pour les clients <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
+                            <li><a href="<?php echo esc_url(home_url( '/' ) ); ?>/aides-menageres">Aide pour les clients <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icon-right.png" class="img-fluid"/></a></li>
                             <li><a href="#"><?php $rubrique = get_the_category(); echo $rubrique[2]->cat_name; ?></a></li>
                         </ul> 
                     </div>
